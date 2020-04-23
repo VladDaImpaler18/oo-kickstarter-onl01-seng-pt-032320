@@ -18,7 +18,11 @@ class Project
     #Backer.all.select{ |b| b.back_project(self) if b.backed_projects.include?(self)}
     #Backer.all.select{ |b| b.back_project(b) if self.backers.include?(b) }
     #Backer.all.select{ |b| b.back_project(self) if self.backers.name.include?(b.name)}
+<<<<<<< HEAD
     #Backer.all.select{ |b| b.back_project(self) if b==backer_obj }
+=======
+    Backer.all.select{ |b| b.back_project(self) if b==backer_obj }
+>>>>>>> 1b4c77d90660f165ffb7670072cebe85b43a03dc
   end
   
   def self.all
