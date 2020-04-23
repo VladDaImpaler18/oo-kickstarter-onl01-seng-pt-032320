@@ -11,10 +11,6 @@ class Project
     @@all << self
   end
   
-  def back_project(project)
-    @backed_projects << project
-    Project.all.select{ |p| p.add_backer(self) if self.backed_projects.include?(p)}
-  end
   def add_backer(backer_obj)
     self.backers << backer_obj
     #binding.pry
