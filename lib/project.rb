@@ -19,7 +19,7 @@ class Project
     #Backer.all.select{ |b| b.back_project(b) if self.backers.include?(b) }
     #Backer.all.select{ |b| b.back_project(self) if self.backers.name.include?(b.name)}
     #Backer.all.select{ |b| b.back_project(self) if b==backer_obj }
-    Backer.all.select{ |b| b.back_project(self) if b==backer_obj }
+    #Backer.all.select{ |b| b.back_project(self) if b==backer_obj }
   end
   
   def self.all
